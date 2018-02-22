@@ -1,0 +1,22 @@
+<!-- practical component exercise #2: modal -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!-- Bulma styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <style type="text/css">body { padding-top: 40px; }</style>
+</head>
+<body>
+    <div id="root" class="container">
+        <modal v-if="showModal" @close="showModal = false">
+            <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+        </modal>
+        <button @click="showModal = true">Show Modal</button>
+    </div>
+    
+	<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    
+	<script src="lesson10.js"></script>
+</body>
+</html>
