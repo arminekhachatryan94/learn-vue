@@ -1,0 +1,25 @@
+<!-- component communication example #1: custom events -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!-- Bulma styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root" class="container">
+        <coupon @applied="onCouponApplied"></coupon> <!-- use v-on: or @ to communicate between a child & parents when applied -->
+        
+        <h1 v-if="couponApplied">You used a coupon!</h1>
+    </div>
+    
+	<script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    
+	<script src="lesson13.js"></script>
+</body>
+</html>
