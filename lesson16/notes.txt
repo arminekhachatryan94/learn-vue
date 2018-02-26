@@ -1,0 +1,3 @@
+Terminal commands:
+
+initialize new vue project --> vue init webpack-simple my-app
