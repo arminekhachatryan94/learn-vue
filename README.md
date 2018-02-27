@@ -15,3 +15,5 @@
 ### __Lesson 14:__ Named Slots in a Nutshell
 ### __Lesson 15:__ Single-Use Components and Inline Templates
 ### __Lesson 16:__ Webpack and vue-cli
+### __Lesson 17:__ Hot Module Replacement
+### __Lesson 18:__ Vue Ajax Requests With Axios
