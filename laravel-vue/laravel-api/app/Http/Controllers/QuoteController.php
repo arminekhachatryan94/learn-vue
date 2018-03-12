@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class QuoteController extends Controller {
     public function postQuote(Request $request) {
-        $quote - new Quote();
+        $quote = new Quote();
         $quote->content = $request->input('content');
         $quote->save();
         return response()->json(['quote' => $quote], 201);
@@ -17,7 +17,7 @@ class QuoteController extends Controller {
         $response = [
             'quotes' => $quotes
         ];
-        return reponse()->json($response, 200);
+        return response()->json($response, 200);
     }
 
     public function putQuote(Request $request, $id) {
